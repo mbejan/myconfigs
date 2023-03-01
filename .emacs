@@ -13,7 +13,7 @@
 (setq package-user-dir "~/.elpa")
 
 ; list the packages you want
-(setq package-list '(zenburn-theme jedi json-mode yaml-mode))
+(setq package-list '(zenburn-theme jedi json-mode yaml-mode color-theme-approximate))
 ; list the repositories containing them
 (setq package-archives '())    
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
@@ -110,7 +110,6 @@
 ;;
 (unless window-system
   (progn
-    (use-package color-theme-approximate)
     (color-theme-approximate-on)
     (xterm-mouse-mode)
     ;;    (require 'mouse+)
@@ -137,15 +136,13 @@
     (global-set-key (kbd "<mouse-2>") 'x-clipboard-yank)
     ))
 
+(load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(zenburn))
- '(custom-safe-themes
-    '("2dc03dfb67fbcb7d9c487522c29b7582da20766c9998aaad5e5b63b5c27eec3f" default))
  '(package-selected-packages '(yaml-mode json-mode jedi zenburn-theme))
  '(tool-bar-mode nil)
  '(tooltip-mode nil))

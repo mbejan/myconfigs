@@ -12,9 +12,9 @@
 ;; Local .elpa folder used to move across devices without internet
 (setq package-user-dir "~/.elpa")
 
-; list the packages you want
+                                        ; list the packages you want
 (setq package-list '(zenburn-theme jedi json-mode yaml-mode color-theme-approximate))
-; list the repositories containing them
+                                        ; list the repositories containing them
 (setq package-archives '())    
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("nongnu" . "http://elpa.nongnu.org/packages/"))
@@ -23,14 +23,15 @@
 (require 'package)
 (package-initialize)
 
-; fetch the list of packages available 
-(unless package-archive-contents
-  (package-refresh-contents))
 
 ; install the missing packages
+(unless(file-exists-p package-user-dir)
+(unless package-archive-contents
+  (package-refresh-contents))  
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
+)
 
 
 ;; ;;
@@ -56,7 +57,7 @@
     (custom-set-variables '(tool-bar-mode nil)
                           '(tooltip-mode nil)
                           )
-)
+  )
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
       backup-by-copying t    ; Don't delink hardlinks
       version-control t      ; Use version numbers on backups
@@ -143,7 +144,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(yaml-mode json-mode jedi zenburn-theme))
+ '(package-selected-packages '(yaml-mode json-mode jedi))
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
 

@@ -1,0 +1,18 @@
+#Run sshd as a local user so that vscode can connect to it
+
+Port 2222
+HostKey ~/work/custom_ssh/ssh_host_rsa_key
+HostKey ~/work/custom_ssh/ssh_host_dsa_key
+AuthorizedKeysFile  .ssh/authorized_keys
+ChallengeResponseAuthentication no
+PubkeyAuthentication yes
+PasswordAuthentication yes
+UsePAM yes
+X11Forwarding yes
+Subsystem   sftp    /usr/lib/ssh/sftp-server
+PidFile ~/work/custom_ssh/sshd.pid
+
+mkdir -p ~/.vscode-server
+ln -s /app/axs/builds/bejanm/work/vscode-server-linux-x64/ ~/.vscode-server/92da9481c0904c6adfe372c12da3b7748d74bdcb
+ln -s /app/axs/builds/bejanm/work/vscode-server-linux-x64/extensions /home/bejanm/.vscode-server/extensions
+#copied extensions.json and changed the paths (not sure if this is required)

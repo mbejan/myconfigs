@@ -1,0 +1,190 @@
+/**
+ *   21/02/2023         bejanm         Initial version 
+ */
+ {
+    //editor
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.fontFamily": "\"Cascadia Code\", \"Fira Code\", \"Consolas\", monospace",
+    "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.fontWeight": "350",
+    "editor.accessibilityPageSize": 1,
+    "editor.fontSize": 13,
+    "editor.foldingMaximumRegions": 65000,
+    "editor.suggestSelection": "first",
+    
+    //breadcrumbs
+    "breadcrumbs.enabled": false,
+    
+    //files
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/__pycache__": true,
+      "**/*.egg-info": true,
+      //"**/dev_target*":false,
+      //"**/target":false
+    },
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "vs-minimal",
+  
+    //git
+    "git.openRepositoryInParentFolders": "always",
+    "git.autofetch": false,
+    "git.autorefresh": false,
+    "git.autoRepositoryDetection": true,
+    "git.suggestSmartCommit": false,
+    "git.ignoreMissingGitWarning": true,
+    "git.ignoreLegacyWarning": true,
+    "gitlens.advanced.messages": {
+      "suppressGitVersionWarning": false
+    },
+  
+    "gitlens.views.searchAndCompare.files.layout": "list",
+    
+    //python
+    //"python.languageServer": "Pylance",
+    "python.languageServer": "Default",
+    "python.analysis.typeCheckingMode": "off",
+  
+    "java.autobuild.enabled": true,
+    "java.eclipse.downloadSources": true,
+    "java.debug.settings.showLogicalStructure": false,
+    "java.import.maven.enabled": true,
+    "java.maven.downloadSources": true,
+    "java.showBuildStatusOnStart.enabled": "notification",
+    "java.progressReports.enabled": true,
+    "java.references.includeDecompiledSources": false,
+  "java.server.launchMode": "LightWeight",
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [
+      "$JDK", // Skip the JDK classes from the default system bootstrap classpath, such as rt.jar, jrt-fs.jar.
+      //"$Libraries", // Skip the classes from application libraries, such as Maven, Gradle dependencies.
+      //"java.myPackage.myClass"
+    ],
+    "java.test.config": {
+      "vmArgs": [
+        "-javaagent:c:/users/bejanm/.m2/repository/org/jmockit/jmockit/1.30/jmockit-1.30.jar"
+      ]
+    },
+    //debug
+    "debug.disassemblyView.showSourceCode": false, 
+    "debug.onTaskErrors": "showErrors",
+    
+    
+    //maven&java
+    "maven.dependency.enableConflictDiagnostics": true,
+    "java.configuration.maven.userSettings": "c:\\Users\\bejanm\\tmpuser\\work\\_git\\authentic\\authentic\\settings.xml",
+    "maven.pomfile.autoUpdateEffectivePOM": true,
+  
+    "java.compile.nullAnalysis.nonnull": [
+      "javax.annotation.Nonnull",
+    ],
+    "java.compile.nullAnalysis.nullable": [
+      "javax.annotation.Nullable"   
+    ],
+    //others
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "redhat.telemetry.enabled": false,
+    "json.maxItemsComputed": 50000,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "explorer.confirmDelete": false,
+    "maven.terminal.useJavaHome": true,
+    
+    //marius's options
+    "emacs-mcx.strictEmacsMove": true,
+    "emacs-mcx.debug.silent": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.sendKeybindingsToShell": true,
+    // "terminal.integrated.commandsToSkipShell": [
+    //   "emacs-mcx.universalArgument", "emacs-mcx.forwardChar", "emacs-mcx.isearchExit", "emacs-mcx.backwardChar", "emacs-mcx.isearchExit", "emacs-mcx.previousLine", "selectPrevSuggestion", "showPrevParameterHint", "emacs-mcx.isearchExit", "emacs-mcx.nextLine", "selectNextSuggestion", "showNextParameterHint", "emacs-mcx.isearchExit", "emacs-mcx.moveBeginningOfLine", "emacs-mcx.isearchExit", "emacs-mcx.moveEndOfLine", "emacs-mcx.isearchExit", "emacs-mcx.forwardWord", "emacs-mcx.isearchExit", "emacs-mcx.backwardWord", "emacs-mcx.isearchExit", "emacs-mcx.forwardWord", "emacs-mcx.isearchExit", "emacs-mcx.backwardWord", "emacs-mcx.isearchExit", "emacs-mcx.backToIndentation", "emacs-mcx.isearchExit", "emacs-mcx.scrollUpCommand", "emacs-mcx.isearchExit", "emacs-mcx.scrollDownCommand", "emacs-mcx.isearchExit", "emacs-mcx.backwardParagraph", "emacs-mcx.forwardParagraph", "emacs-mcx.endOfBuffer", "emacs-mcx.isearchExit", "emacs-mcx.beginningOfBuffer", "emacs-mcx.isearchExit", "workbench.action.gotoLine", "emacs-mcx.isearchExit", "workbench.action.gotoLine", "editor.action.marker.next", "editor.action.marker.next", "editor.action.marker.prev", "emacs-mcx.recenterTopBottom", "emacs-mcx.isearchForward", "editor.action.nextMatchFindAction", "emacs-mcx.isearchBackward", "editor.action.previousMatchFindAction", "emacs-mcx.isearchForwardRegexp", "editor.action.nextMatchFindAction", "emacs-mcx.isearchBackwardRegexp", "editor.action.previousMatchFindAction", "emacs-mcx.queryReplace", "emacs-mcx.queryReplaceRegexp", "emacs-mcx.addSelectionToNextFindMatch", "emacs-mcx.addSelectionToPreviousFindMatch",  "emacs-mcx.deleteForwardChar", "emacs-mcx.deleteBackwardChar", "emacs-mcx.killWord", "emacs-mcx.backwardKillWord", "emacs-mcx.killLine", "emacs-mcx.killWholeLine", "emacs-mcx.killRegion", "emacs-mcx.isearchExit", "emacs-mcx.copyRegion", "emacs-mcx.isearchExit", "emacs-mcx.yank", "emacs-mcx.yank", "emacs-mcx.isearchExit", "emacs-mcx.yank-pop", "emacs-mcx.isearchExit", "lineBreakInsert", "emacs-mcx.isearchExit", "emacs-mcx.newLine", "emacs-mcx.isearchExit", "emacs-mcx.newLine", "emacs-mcx.isearchExit", "emacs-mcx.deleteBlankLines", "emacs-mcx.isearchExit", "editor.action.selectAll", "emacs-mcx.isearchExit", "undo", "emacs-mcx.isearchExit", "editor.action.commentLine", "emacs-mcx.isearchExit", "editor.action.blockComment", "emacs-mcx.isearchExit", "emacs-mcx.transformToLowercase", "emacs-mcx.transformToLowercase", "emacs-mcx.transformToUppercase", "emacs-mcx.transformToUppercase", "emacs-mcx.transformToTitlecase", "emacs-mcx.executeCommands", "emacs-mcx.cancel", "emacs-mcx.cancel", "emacs-mcx.cancel", "emacs-mcx.isearchAbort", "emacs-mcx.isearchExit", "closeReferenceSearch", "editor.closeTestPeek", "notebook.cell.quitEdit", "closeBreakpointWidget", "editor.action.inlineSuggest.hide", "editor.action.webvieweditor.hideFind", "editor.cancelOperation", "editor.debug.action.closeExceptionWidget", "editor.gotoNextSymbolFromResult.cancel", "search.action.focusQueryEditorWidget", "settings.action.clearSearchResults", "welcome.goBack", "workbench.action.hideComment", "leaveEditorMessage", "leaveSnippet", "closeDirtyDiff", "closeMarkersNavigation", "notifications.hideToasts", "closeParameterHints", "hideSuggestWidget", "cancelLinkedEditingInput", "cancelRenameInput", "closeAccessibilityHelp", "closeReplaceInFilesWidget", "keybindings.editor.clearSearchResults", "list.clear", "notebook.hideFind", "search.action.cancel", "settings.action.focusLevelUp", "workbench.action.closeQuickOpen", "workbench.action.hideInterfaceOverview", "workbench.action.terminal.clearSelection", "workbench.action.terminal.hideFind", "workbench.action.terminal.navigationModeExit", "workbench.banner.focusBanner", "workbench.statusBar.clearFocus", "breadcrumbs.selectEditor", "editor.closeCallHierarchy", "editor.closeTypeHierarchy", "filesExplorer.cancelCut", "closeReferenceSearch", "notifications.hideList", "notifications.hideToasts", "emacs-mcx.setMarkCommand", "emacs-mcx.setMarkCommand", "emacs-mcx.exchangePointAndMark", "emacs-mcx.rectangleMarkMode", "emacs-mcx.startRectCommand", "emacs-mcx.killRectangle", "emacs-mcx.yankRectangle", "emacs-mcx.deleteRectangle", "emacs-mcx.copyRectangleAsKill", "emacs-mcx.openRectangle", "emacs-mcx.clearRectangle", "emacs-mcx.stringRectangle", "emacs-mcx.replaceKillRingToRectangle", "editor.action.triggerSuggest", "toggleSuggestionDetails", "editor.action.triggerSuggest", "toggleSuggestionDetails", "workbench.action.showCommands", "workbench.action.toggleSidebarVisibility", "workbench.action.closeWindow", "workbench.action.toggleZenMode", "workbench.action.quickOpen", "workbench.action.files.save", "workbench.action.files.saveAs", "workbench.action.files.saveAll", "workbench.action.newWindow", "workbench.action.showAllEditorsByMostRecentlyUsed", "workbench.action.closeActiveEditor", "workbench.action.closeEditorsInGroup", "workbench.action.closeEditorsInOtherGroups", "workbench.action.splitEditorDown", "workbench.action.splitEditorRight", "workbench.action.toggleEditorGroupLayout", "workbench.action.navigateEditorGroups", "emacs-mcx.paredit.forwardSexp", "emacs-mcx.paredit.backwardSexp", "emacs-mcx.paredit.markSexp", "emacs-mcx.paredit.killSexp", "emacs-mcx.paredit.backwardKillSexp", "selectPrevQuickFix", "selectNextQuickFix", "workbench.action.quickOpenSelectPrevious", "workbench.action.quickOpenSelectNext", "workbench.action.acceptSelectedQuickOpenItem", "editor.action.triggerParameterHints", "workbench.action.togglePanel", "tab", "workbench.action.previousEditor", "workbench.action.nextEditor"
+    // ],
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.gpuAcceleration": "canvas",
+    "terminal.integrated.fontWeightBold": "normal",
+    "debug.console.fontSize": 10,
+    "debug.console.wordWrap": true,
+    "debug.console.historySuggestions": false,
+    "debug.console.collapseIdenticalLines": true,
+    "emacs-mcx.debug.loggingLevelForConsole": "error",
+  
+    "oracledevtools.bookmarkFileFolder": "C:\\Users\\bejanm\\Oracle\\oracle.oracledevtools",
+    "oracledevtools.download.otherFolder": "C:\\Users\\bejanm\\downloads",
+    "oracledevtools.connectionConfiguration.configFilesFolder": "C:\\Users\\bejanm\\Oracle\\network\\admin",
+    "oracledevtools.connectionConfiguration.walletFileFolder": "C:\\Users\\bejanm\\Oracle\\network\\admin",
+    "aws.resources.enabledResources": [
+      "AWS::ImageBuilder::ContainerRecipe",
+      "AWS::ImageBuilder::DistributionConfiguration",
+      "AWS::ImageBuilder::ImagePipeline",
+      "AWS::ImageBuilder::ImageRecipe",
+      "AWS::ImageBuilder::InfrastructureConfiguration"
+    ],
+    "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+    ],
+    "camelk.integrations.runtimeVersion": "1.12.1",
+    "camelk.tools": {
+      "camelk.tools.kamel-path": "c:\\Users\\bejanm\\AppData\\Roaming\\Code\\User\\globalStorage\\redhat.vscode-camelk\\camelk\\tools\\kamel\\kamel.exe"
+    },
+    "vs-kubernetes": {
+      "vs-kubernetes.kubectl-path": "c:\\users\\bejanm\\tmpuser\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe"
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "rsp-ui.enableStartServerOnActivation": [
+      {
+        "id": "redhat.vscode-server-connector",
+        "name": "Red Hat Server Connector",
+        "startOnActivation": true
+      }
+    ],
+    "workbench.editorAssociations": {
+      "git-rebase-todo": "default"
+    },
+  
+    "workbench.editor.showTabs": "multiple",
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "xml.symbols.maxItemsComputed": 50000,
+    "yaml.maxItemsComputed": 15000,
+    "remote.SSH.remotePlatform": {
+      "10.0.0.30": "linux"
+    },
+    "window.titleBarStyle": "custom",
+    "security.workspace.trust.untrustedFiles": "open"
+  }
